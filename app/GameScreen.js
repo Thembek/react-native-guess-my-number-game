@@ -82,6 +82,7 @@ function GameScreen({userNumber, onGameOver}) {
                         (itemData) => <GuessLogItem roundNumber={guessRoundsListLength - itemData.index} guess={itemData.item}/>
                     }
                     keyExtractor={(item) => item}
+                    showsVerticalScrollIndicator={false}
                 />
             </View>
         </View>
